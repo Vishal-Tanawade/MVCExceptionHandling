@@ -6,11 +6,15 @@ using System.Web.Mvc;
 
 namespace MVCExceptionHandling.Controllers
 {
+    [HandleError] //For Attribute error handling , We don't required any try catch block or override any method
     public class NormalController : Controller
     {
         // GET: Normal
         public ActionResult Index()
         {
+            int i = 0;
+            int num = 10;
+            i = num / i;
             return View();
         }
 

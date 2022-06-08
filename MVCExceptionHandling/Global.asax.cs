@@ -14,6 +14,8 @@ namespace MVCExceptionHandling
         {
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            //To show default error msg
+            GlobalFilters.Filters.Add(new HandleErrorAttribute()); ////For Attribute error handling 
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
