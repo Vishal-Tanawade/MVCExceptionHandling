@@ -6,11 +6,16 @@ using System.Web.Mvc;
 
 namespace MVCExceptionHandling.Controllers
 {
-    public class SecondController : Controller
+
+
+    public class SecondController : BaseController
     {
         // GET: Second
         public ActionResult Index()
         {
+            int i = 0;
+            int num = 10;
+            i = num / i;
             return View();
         }
 
