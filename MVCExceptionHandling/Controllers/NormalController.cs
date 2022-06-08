@@ -7,6 +7,8 @@ using System.Web.Mvc;
 namespace MVCExceptionHandling.Controllers
 {
     [HandleError] //For Attribute error handling , We don't required any try catch block or override any method
+
+    //[HandleError(ExceptionType=typeof(DivideByZeroException),View ="DError")]
     public class NormalController : Controller
     {
         // GET: Normal
